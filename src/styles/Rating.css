@@ -1,0 +1,21 @@
+.star {
+    height: 32px;
+    width: 32px;
+    
+    margin: 0 3px;
+}
+
+.stars {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width : 768px) {
+    .stars {
+    }
+    
+    .star {
+    height: 18px;
+    width: 18px;
+    }
+}

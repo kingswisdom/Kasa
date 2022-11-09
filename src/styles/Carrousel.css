@@ -1,0 +1,69 @@
+.carrousel {
+    position: relative;
+    margin: 3% 8%;
+  }
+  
+.carrousel__image {
+  width: 100%;
+  aspect-ratio: 3/1;    
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 25px;
+}
+
+.carrousel__rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -8px;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carrousel__leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -8px;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carrousel__annotation {
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, 0);
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 0.4s;
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 768px) {
+  .carrousel__image{
+    aspect-ratio: 1/1;
+    height: 70%;
+    border-radius: 13px;
+  }
+
+  .carrousel__rightArrow {
+    height: 32px;
+  }
+
+  .carrousel__leftArrow {
+    height: 32px;
+  }
+}

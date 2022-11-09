@@ -1,0 +1,58 @@
+@import "./variables.css";
+
+.collapsible {
+}
+
+.collapsible__button {
+    position: relative;
+    background-color: #FF6060;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible__toggle {
+    background-color: #eee;
+    color: #FF6060;
+    padding: 25px 20px 15px 20px;
+    margin-top: -10px;
+    font-size: 18px;
+    height: auto;
+    border-radius: 0 0 8px 8px;
+}
+
+.collapsible__toggle ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.collapsible__arrow {
+    width: 13px;
+    transition-duration: 0.1s;
+}
+
+/*For mobile users*/
+@media screen and (max-width: 768px) {
+    .collapsible__button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .collapsible__toggle {
+        font-size: 14px;
+    }
+}

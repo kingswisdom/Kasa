@@ -1,0 +1,20 @@
+.about {
+	padding: 3% 4%;
+}
+
+.about__section {
+    padding: 0 7%;
+    display: grid;
+    margin-top: 50px;
+    gap: 35px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/*For mobile users*/
+@media screen and (max-width: 768px) {
+    .about__section {
+        padding: 0;
+        gap: 24px;
+        margin-top: 20px;
+    }
+}

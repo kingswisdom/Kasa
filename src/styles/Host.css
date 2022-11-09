@@ -1,0 +1,32 @@
+.host {
+	display: flex;
+	align-items: center;
+	max-width: none;
+}
+.host__img {
+    border-radius: 50%;
+    height: 64px;
+    margin-left: 10px;
+    width: 64px;
+}
+.host__name {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+	.host {
+		max-width: 120px;
+    }
+	.host__img {
+        height: 48px;
+        width: 48px;
+    }
+    .host__name {
+        font-size: 13px;
+    }
+}

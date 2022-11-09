@@ -1,0 +1,30 @@
+.lodgingCard {
+	border-radius: 13px;
+	position: relative;
+	aspect-ratio: 1/1;
+	width: 100%;
+	overflow: hidden;
+}
+
+.lodgingCard__title {
+	bottom: 25px;
+	font-size: 18px;
+	font-weight: 500;
+	left: 19.71px;
+	position: absolute;
+	color: white;
+}
+
+.lodgingCard__img {
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.lodgingCard__overlay {
+	-moz-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
+	-webkit-box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
+	box-shadow: -1px -81px 84px -37px rgba(0, 0, 0, 1) inset;
+	inset: 0;
+	position: absolute;
+}

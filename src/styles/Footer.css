@@ -1,0 +1,25 @@
+.kasa-footer {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 70px 0 10px 0;
+}
+
+.kasa-footer .logo {
+    width: 122px;
+}
+
+.kasa-footer h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*For mobile users*/
+@media screen and (max-width: 768px) {
+    .kasa-footer h3 {
+        font-size: 16px;
+    }
+}

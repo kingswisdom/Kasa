@@ -1,0 +1,46 @@
+.homepage {
+	margin: 3% 5%;
+}
+
+.lodging__section {
+    display: grid;
+    margin-top: 50px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+}
+
+/*For mobile users*/
+@media screen and (max-width: 768px) {
+    .homepage {
+		margin: 3% 4%;
+	}
+
+	.lodging__section {
+		border-radius: 25px;
+		gap: 25px;
+		margin-top: 35px;
+		grid-template-columns: repeat(1, 1fr);
+        background-color: white;
+	}
+}
+/*For tablet users*/
+@media all and (min-width: 768px) and (max-width: 1080px) {
+	.homepage {
+		margin: 3% 5%;
+	}
+
+	.lodging__section {
+		border-radius: 25px;
+		gap: 50px;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 54px;
+	}
+}
+/*For pc users*/
+@media screen and (min-width: 1080px) {
+	.lodging__section {
+		grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 54px;
+	}
+}

@@ -1,0 +1,81 @@
+.kasa-header {
+}
+
+.kasa-header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.kasa-header .logo {
+    width: 210px;
+}
+
+.kasa-header .navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    padding: 0;
+    
+}
+
+.kasa-header .navbar li {
+}
+
+.kasa-header .navbar li a {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FF6060;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    
+}
+
+.kasa-header .navbar li a:hover {
+    border-bottom: solid 1px #FF6060;
+}
+
+/*For mobile users*/
+@media screen and (max-width: 768px) {
+    .kasa-header .logo {
+        width: 145px;
+    }
+
+    .kasa-header .navbar {
+        padding: 5% 5%;
+    }
+
+    .kasa-header .navbar ul {
+        gap: 26px
+    }
+    .kasa-header .navbar li a {
+        font-size: 14px;
+        TEXT-TRANSFORM: UPPERCASE;
+    }
+}
+
+/*For tiny devices*/
+@media screen and (max-width: 349px) {
+    .kasa-header .navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .kasa-header .navbar ul {
+        
+    }
+    .kasa-header .logo {
+        width: 100%;
+        HEIGHT: 20PX;
+    }
+}
+
+/*For tablet users*/
+@media all and (min-width: 768px) and (max-width: 1080px) {
+    .kasa-header .navbar li a {
+        font-size: 18px;
+    }
+}
+/*For pc users*/
+@media screen and (min-width: 1080px) {
+}

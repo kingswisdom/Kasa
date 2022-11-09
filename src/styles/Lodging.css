@@ -1,0 +1,61 @@
+.lodging {
+    
+}
+
+.lodging__informations {
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+}
+
+.lodging__host {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 13px;
+
+
+}
+.lodging__details {
+    margin: 3% 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    margin-top: 16px;
+}
+
+.lodging__wrapper {
+    margin: 3% 4%;
+    display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .lodging {
+        max-width: 1080px;
+        margin:auto;
+        padding: 10px;
+    }
+
+    .lodging__host {
+        flex-direction: row-reverse;
+        align-items: center;
+        align-self: stretch;
+        margin-top: 6PX;
+    }
+
+    .lodging__wrapper {
+        flex-direction: column;
+        margin: 6% 5% 3% 5%;
+    }
+    .lodging__details {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .lodging__informations {
+        gap: 10px;
+    }
+}
